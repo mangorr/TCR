@@ -1,0 +1,6 @@
+{
+  "domain": "<your domain>",
+  "clientId": "<your client id>",
+  "audience": "http://quickstarts/api"
+
+}

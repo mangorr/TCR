@@ -1,0 +1,36 @@
+*{margin:0;padding:0}
+li{list-style:none}
+img{vertical-align:top;border:none}
+
+.headBar-container {
+  width: 100%;
+  height: 10vh;
+  background-image: linear-gradient(to right, #8360c3, #2ebf91);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.headBar-item {
+  font-size: 20px;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+.headBar-item:hover {
+  font-size: 30px;
+}
+
+.content-container {
+  margin-top: 2%;
+  margin-left: 2%;
+  width: 100%;
+  display: flex;
+  gap: 2%;
+
+}
+
+.content-photo {
+
+  width: 50%;
+}
