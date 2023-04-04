@@ -48,12 +48,18 @@ function Content() {
   }
   return (
     <div className="content-container">
-      <img className='content-photo' src={require("../../../frontPhoto.jpeg")} alt="not found"/>
+      <img className='content-photo' src={require("../../../img/frontPhoto.jpeg")} alt="not found"/>
       <Profile/>
       <div>Hello! This is TCR front page</div>
       <div>
         <button onClick={handleClick}>role based auth</button>
       </div>
+        {/*<div>*/}
+        {/*    <button onClick={function medicalHomePage() {*/}
+        {/*        // window.location.href='../medical/index.html';*/}
+        {/*        window.open('../medical/index.html')*/}
+        {/*    }}>medical homepage</button>*/}
+        {/*</div>*/}
       {isAuthClick && (
         <div>Only Admin role are authorized to see the content below</div>
       )}

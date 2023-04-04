@@ -36,7 +36,7 @@ I have created one frontend and one backend. For now, the code is able to
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/90755784/196551109-10fcadc2-435e-4f9d-9c16-9aa0833821eb.png">.
 - Add the following code in Line 64.
 
-`
+```js
 additionalSignUpFields: [{
     name: "address",
     placeholder: "Enter your address",
@@ -65,7 +65,8 @@ additionalSignUpFields: [{
         };
     }
 }]
-`
+```
+
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/90755784/196551492-19be1fab-33df-4590-acaa-fec3265ce47e.png">
 - Click 'Save Changes'.
 
@@ -77,7 +78,7 @@ additionalSignUpFields: [{
 module.exports.port = 'http://localhost:3000';
 `
 `
-module.exports.auth0token = <your auth0 tocken>;
+module.exports.auth0token = <your client id>;
 `
 `
 module.exports.domain = <your auth0 domain>;
@@ -148,7 +149,7 @@ module.exports.audience = 'http://quickstarts/api';
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/90755784/200674221-e434e88d-3b95-419c-98d6-3eadbaea3afc.png">
 
 
-### step 6: add code in the backend to check whether the user has permission to access to certain API
+### step 6: add code to route/index.js in the backend to check whether the user has permission to access to certain API
 example:
 <img width="679" alt="image" src="https://user-images.githubusercontent.com/90755784/210439980-0219a5db-4a4c-442c-a1bc-ed3edd568c65.png">
  (step 6 might need further adjustment but everything above step 6 should be correct)

@@ -5,15 +5,15 @@ import { useAuth0 } from "@auth0/auth0-react";
 
 var LoginPage = function() {
   const { loginWithRedirect, isAuthenticated } = useAuth0();
-
-
+  // export function login() {
+  const login = () => {
+    return loginWithRedirect({ target: 'http://localhost:3000'});
+  }
   return (
     !isAuthenticated &&
     <div>
-      <div onClick={() => loginWithRedirect({ target: 'http://localhost:3000'})}>Log In</div>
+      <div onClick={() => login()}>Log In</div>
     </div>
-
-
 
   )
 }

@@ -1,6 +1,7 @@
 {
-  "domain": "<your domain>",
-  "clientId": "<your client id>",
+  "domain": "dev-ncqyka62xtbhztvv.us.auth0.com",
+  "clientId": "jDnBb0JkRccMFN8MW6a7m52v96WZUtTl",
   "audience": "http://quickstarts/api"
 
 }
+

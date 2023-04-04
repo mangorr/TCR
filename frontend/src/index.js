@@ -4,6 +4,7 @@ import App from './components/App';
 import { Auth0Provider } from "@auth0/auth0-react";
 const config = require('./config.js');
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // remember to add audience if you want to use role based authentication. a example config.js file content is as follows:
@@ -18,9 +19,12 @@ root.render(
     clientId = {config.auth0token}
     audience={config.audience}
     redirectUri={config.port}>
-      <App />
+            <App />
+
     </Auth0Provider>
 
   </React.StrictMode>
+
+
 );
 
