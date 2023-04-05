@@ -5,16 +5,15 @@ import HomePage from '../index';
 import { useAuth0 } from "@auth0/auth0-react";
 import { menuItems } from "./menuItems";
 import MenuItems from './dropdown/MenuItems';
-// import {hasToken} from '@/utils/token';
 
 function HeadBar() {
-    const {loginWithRedirect, isAuthenticated } = useAuth0();
     // const handleOnClick = () => {
     //     if(!isAuthenticated) {
     //         return loginWithRedirect({ target: 'http://localhost:3000'})
     //     }
     //     return <MenuItems items='Services' />
     // }
+    const {isAuthenticated } = useAuth0();
   return (
     <div className="headBar-container">
         <div className='headBar-item'>
@@ -32,7 +31,8 @@ function HeadBar() {
             if (isAuthenticated) {
                 return (
                     <div className={menu.cName} key={index}>
-                        <MenuItems items={menu} key={index} />
+                        {menu.title}
+                        {/*<MenuItems items={menu} key={index} />*/}
                     </div>
                 );
             }
