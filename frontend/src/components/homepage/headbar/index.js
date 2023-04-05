@@ -30,8 +30,9 @@ function HeadBar() {
             // }
             if (isAuthenticated) {
                 return (
-                    <div className={menu.cName} key={index}>
-                        {menu.title}
+                    <div className={menu.cName} href={menu.url} key={index}>
+                        <a href={menu.url}>{menu.title}</a>
+                        {/*{menu.title}*/}
                         {/*<MenuItems items={menu} key={index} />*/}
                     </div>
                 );
